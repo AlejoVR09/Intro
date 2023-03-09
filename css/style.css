@@ -91,3 +91,16 @@ h1 {
 .mainNav a:hover{
     background-color: var(--mainColor);
 }
+
+/* Pagina-Listas */
+
+h2{
+    text-transform: uppercase;
+}
+
+.listas {
+    background-color: black;
+    color: white;
+}
+
+/* Pagina-table */
