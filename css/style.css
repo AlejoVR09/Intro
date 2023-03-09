@@ -1,4 +1,20 @@
+:root {
+    /* Color de la aplicacion */
+    --mainColor: red;
+    --secondColor: white;
 
+    /* Fuentes */
+    --mainFont: 'Pacifico', cursive;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--mainFont);
+}
+
+body {
+    font-size: 16px;
+}
 h1 {
     text-align: center;
 }
