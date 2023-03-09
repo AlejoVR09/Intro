@@ -117,6 +117,7 @@ td, th {
 
 td {
     background-color: var(--secondColor);
+    color: black;
 }
 th {
     background-color: green;
