@@ -114,10 +114,14 @@ h2 {
 
 /* Pagina-table */
 
-td,
-th {
+.factura td,
+.factura th {
     width: 15rem;
     height: 2.5rem;
+}
+
+th,
+td {
     text-align: center;
     color: black;
 }
