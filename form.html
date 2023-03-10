@@ -22,7 +22,7 @@
 
         <label for="numero" class="campo">
             <span>Number</span>
-            <input type="number" name="number" class="camp" placeholder="Your phone number">
+            <input type="number" min="1" max="100" name="number" class="camp" placeholder="Your phone number">
         </label>
 
         <label for="calendario" class="campo">
@@ -34,7 +34,19 @@
             <span>Message</span>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="camp" placeholder="Write a message"></textarea>
         </label>
+        <fieldset>
+            <legend>Generos</legend>
+                <input type="radio" name="gender" class="gender">Male <br>
+                <input type="radio" name="gender">Female <br>
+                <input type="radio" name="gender">Other <br>
+        </fieldset>
 
+        <fieldset>
+            <legend>Subjects</legend>
+                <input type="checkbox" name="topic" class=""> English <br>
+                <input type="checkbox" name="topic">Physics <br>
+                <input type="checkbox" name="topic">Maths <br>
+        </fieldset>
         <input type="submit" name="enviar" value="Enviar">
     </form>
 </body>

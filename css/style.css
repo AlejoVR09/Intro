@@ -150,10 +150,11 @@ th {
 .formulario {
     display: grid;
     grid-template-columns: 23rem 23rem;
-    grid-template-rows: 5rem 5rem 25rem;
+    grid-template-rows: 5rem 5rem 25rem 15rem;
 }
 
-.campo:nth-child(5){
+.campo:nth-child(5),
+.campo:nth-child(6){
     grid-column: 1/3;
 }
 
@@ -164,3 +165,11 @@ th {
 .camp{
     width: 100%;
 }
+
+fieldset{
+    margin-bottom: 2rem;
+}
+
+/* Taller de formularios */
+
+
