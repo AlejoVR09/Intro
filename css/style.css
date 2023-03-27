@@ -12,6 +12,13 @@ html {
     font-size: 62.5%;
     font-family: var(--mainFont);
     background-color: var(--mainColor);
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -173,3 +180,32 @@ fieldset{
 /* Taller de formularios */
 
 
+/* Flexbox */
+
+
+.c1,.c2,.c3,.c4 {
+    width: 50rem;
+    height: 50rem;
+}
+
+.c1 {
+    background-color: aqua;
+}
+
+.c2 {
+    background-color: black;
+}
+
+.c3 {
+    background-color: blue;
+}
+
+.c4 {
+    background-color: brown;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
