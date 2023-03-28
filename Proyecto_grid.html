@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Grid</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            margin: 1rem;
+            
+        }
+        .info {
+            padding: 8rem;
+        }
+        .hero-img{
+            width: 100%;
+            height: 100%;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        main{
+            margin: 0 auto;
+        }
+        .food-img{
+            max-width: 50rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 1fr;
+            gap: 20px;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            grid-area: 1/1/3/3;
+            object-fit: contain;
+        }
+
+        .dish{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .proves {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-auto-rows: 15rem   ;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        .proves-dish{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .bg-rose{
+            background-color: coral;
+            padding: 2rem;
+            border-top-left-radius: 40px;
+        }
+
+        .bg-rose:hover {
+            box-shadow: -9px 15px 5px 0px rgba(0,0,0,0.75);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <section class="info">
+            <h1>Check The <br> Best Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo cumque, delectus illum voluptates repudiandae deserunt doloremque sunt possimus odit nostrum iure? Temporibus enim odit iure sint est aliquid ex nihil!</p>
+            <button>
+                Book a table
+            </button>
+        </section>
+        <figure>
+            <img class="hero-img" src="https://i.postimg.cc/zD21m9fG/hero.png" alt="hero">
+        </figure>
+    </header>
+    
+    <main>
+        <h2>OUR SERVICE</h2>
+        <figure class="food-img">
+            <img class="video" src="https://i.postimg.cc/k5qHRc5H/video.png" alt="video">
+            <img class="dish" src="https://i.postimg.cc/qR0pRyfB/dish1.png" alt="dish_1">
+            <img class="dish" src="https://i.postimg.cc/Wp5sNd5j/dish2.png" alt="dish_2">
+            <img class="dish" src="https://i.postimg.cc/hPwgmHF5/dish3.png" alt="dish_3">
+            <img class="dish" src="https://i.postimg.cc/MG08hHnC/dish4.png" alt="dish_4">
+        </figure>  
+    </main>
+    
+    <section>
+        <h2>Home Menu</h2>
+        <figure class="proves">
+            <div class="bg-rose">
+                <img class="proves-dish" src="https://i.postimg.cc/15g1yJgc/plate1.png" alt="proves">
+            </div>
+            <div class="bg-rose">
+                <img class="proves-dish" src="https://i.postimg.cc/cH1P2my3/plate2.png" alt="proves">
+            </div>
+            <div class="bg-rose">
+                <img class="proves-dish" src="https://i.postimg.cc/rs3bd2dG/plate3.png" alt="proves">
+            </div>
+            <div class="bg-rose">
+                <img class="proves-dish" src="https://i.postimg.cc/Fsk8MzqT/plate4.png" alt="proves">
+            </div>
+            <div class="bg-rose">
+                <img class="proves-dish" src="https://i.postimg.cc/rw63Mc2M/plate5.png" alt="proves">
+            </div>       
+        </figure>
+    </section>
+</body>
+</html>

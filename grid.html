@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    .c1,.c2,.c3,.c4,.c5,.c6 {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .c1 {
+        background-color: aqua;
+    }
+
+    .c2 {
+        background-color: black;
+    }
+
+    .c3 {
+        background-color: blue;
+    }
+
+    .c4 {
+        background-color: brown;
+    }
+
+    .c5 {
+        background-color: yellow;
+    }
+
+    .c6 {
+        background-color: chocolate;
+    }
+
+    .c7 {
+        background-color: darkmagenta;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 20px;
+        grid-auto-columns:10rem;
+        grid-template-rows: 10rem 10rem 10rem;
+        grid-auto-flow: column;
+    }
+
+    .grid-container2 {
+        display: grid;
+        gap: 20px;
+        grid-auto-columns:10rem 10rem;
+        grid-template-rows: 10rem 10rem;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .c1--small {
+        background-color: aqua;
+        display: grid;
+        place-content: end;
+        font-size: 2rem;
+    }
+
+    .grid-container3 {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 10rem 10rem 10rem;
+        grid-template-rows: 10rem 10rem 10rem;
+    }
+
+    .c11 {
+        background-color: aqua;
+    }
+
+    .c22 {
+        background-color: black;
+        grid-column: 2/4;
+    }
+
+    .c33 {
+        background-color: blue;
+        grid-column: 1/3;
+    }
+
+    .c44 {
+        background-color: brown;
+    }
+
+    .c55 {
+        background-color: yellow;
+    }
+
+    .c66 {
+        background-color: chocolate;
+    }
+
+    .c77 {
+        background-color: darkmagenta;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+            <div class="c5"></div>
+            <div class="c6"></div>
+        </div>
+        <div class="grid-container2">
+            <div class="c1--small"><span>1</span></div>
+            <div class="c1--small"><span>2</span></div>
+            <div class="c1--small"><span>3</span></div>
+            <div class="c1--small"><span>4</span></div>
+        </div>
+        <div class="grid-container3">
+            <div class="c11"></div>
+            <div class="c22"></div>
+            <div class="c33"></div>
+            <div class="c44"></div>
+            <div class="c55"></div>
+            <div class="c66"></div>
+            <div class="c77"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
