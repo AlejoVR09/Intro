@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de formularios</title>
-    <link rel="stylesheet" href="./css/styleR.css">
     <style>
         html {
         font-size: 62.5%;
@@ -21,32 +20,70 @@
         }
 
         body {
+            margin: 0;
             font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .space_1 th {
-            padding-left: 50px;
-            padding-right: 50px;
-            text-align: start;
+
+        /* Navegacion */
+
+        .nav_container {
+            background-color: black;
+            width: 100%;
+            margin-bottom: 1.5rem;
         }
-        
-        .subjects td {}
+
+        .mainNav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mainNav a {
+            color: white;
+            padding: .5rem;
+            text-decoration: none;
+        }
+
+        .mainNav a:hover {
+            background-color: white;
+            color: red;
+        }
+
         
         .checkbox {
             padding-left: 100px;
         }
         
         .space {
-            width: 300px;
+            margin-top: 1rem;
+            width: 380px;
         }
-        
-        .space_1 {
-            width: 97%;
+
+        .mainSpace th {
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: start;
         }
     </style>
 </head>
 
 <body>
-    <fieldset class="space_1">
+    <header>
+        <div class="nav_container">
+            <nav class="mainNav container">
+                <a href="index.html">Inicio</a>
+                <a href="list.html">Lists</a>
+                <a href="table.html">Tables</a>
+                <a href="taller_tables.html">Table activity</a>
+                <a href="form.html">Forms</a>
+                <a href="taller_form.html">Forms activity</a>
+                <a href="flexbox.html">Flexbox</a>
+                <a href="grid.html">Grid</a>
+                <a href="Proyecto_grid.html">Proyecto grid</a>
+            </nav>
+        </div>
+    </header>
+    <fieldset class="mainSpace">
         <legend>DATOS DEL ESTUDIANTE</legend>
         <table>
             <tr>
@@ -97,7 +134,7 @@
     </fieldset>
 
     <h1 style="text-align: center;">*** SELECCIONAR LAS MATERIAS DEL SEMESTRE ***</h1>
-    <table style="margin: 0 auto;" class="subjects">
+    <table style="margin: 0 auto;">
         <tr>
             <th>MATERIAS</th>
             <th>Nro<br>Creditos</th>

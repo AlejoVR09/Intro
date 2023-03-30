@@ -5,12 +5,11 @@
     --mainColor: red;
     --secondColor: white;
     /* Fuentes */
-    --mainFont: 'Pacifico', cursive;
 }
 
 html {
     font-size: 62.5%;
-    font-family: var(--mainFont);
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--mainColor);
     box-sizing: border-box;
 }
