@@ -6,21 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller</title>
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+           text-align: center; 
+           background-color: green;
+           border: 2px solid;
+        }
+        .factura td,
+        .factura th {
+            width: 15rem;
+            height: 1rem;
+        }
+
+        table,th,td{
+            border: 1px solid;
+        }
+
+        th,
+        td {
+            text-align: center;
+            color: black;
+        }
+
+        td {
+            background-color: var(--secondColor);
+        }
+
+        th {
+            background-color: green;
+        }
+
+        .larger {
+            width: 50rem;
+        }
+
+        .schedule {
+            margin-top: 5rem;
+        }
+
+        .features_container {
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 
 <body>
     <nav></nav>
     <main>
         <section>
-            <h2>factura de venta</h2>
+            <h1>Factura de venta</h2>
             <section class="factura">
                 <section class="features_container">
-                    <table border="1">
+                    <table>
                         <tr>
                             <th>Discount</th>
                             <td>7,80%</td>
@@ -32,7 +73,7 @@
                     </table>
                 </section>
                 <section>
-                    <table border="1">
+                    <table>
                         <tr>
                             <th>Product name</th>
                             <th>Amount</th>
@@ -102,7 +143,7 @@
 
 
             <section class="schedule">
-                <table border="1">
+                <table>
                     <tr>
                         <th rowspan="3">Day</th>
                         <th colspan="4" class="timer">Seminar</th>

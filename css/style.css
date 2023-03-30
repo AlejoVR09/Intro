@@ -117,40 +117,6 @@ h2 {
     color: white;
 }
 
-
-/* Pagina-table */
-
-.factura td,
-.factura th {
-    width: 15rem;
-    height: 2.5rem;
-}
-
-th,
-td {
-    text-align: center;
-    color: black;
-}
-
-td {
-    background-color: var(--secondColor);
-}
-
-th {
-    background-color: green;
-}
-
-.larger {
-    width: 50rem;
-}
-
-.schedule {
-    margin-top: 5rem;
-}
-
-.features_container {
-    margin-bottom: 1rem;
-}
 /* Formulario */
 
 .formulario {
