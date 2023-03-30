@@ -23,6 +23,8 @@ html {
 body {
     font-size: 16px;
     color: var(--secondColor);
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -31,9 +33,13 @@ body {
 }
 
 h1 {
+    margin-top: 3rem;
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
 
 /* Imagenes */
 
@@ -48,29 +54,32 @@ h1 {
 }
 
 .img_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     text-align: center;
+    width: 100%;
 }
 
-.img_s {
-    width: 23%;
+.img_1,.img_2,.img_3,.img_4 {
+    width: 100%;
     height: 300px;
     margin: 16px;
+    object-fit: contain;
 }
 
 
 /* Multimedia */
-
-.videos {
-    text-align: center;
-    margin: 20px;
-}
 
 .videos_s {
     margin: 20px;
 }
 
 .mapa_container {
-    margin: 20px;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
 }
 
 .mapa {
@@ -78,10 +87,17 @@ h1 {
     height: 60rem;
 }
 
+.find {
+    font-size: 10rem;
+}
+
 
 /* Navegacion */
 
 .nav_container {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: navy;
 }
 
@@ -103,17 +119,16 @@ h1 {
 
 /* Pagina-Listas */
 
-h2 {
+.listas h2,.nonumeradas h2 {
     text-transform: uppercase;
     text-align: center;
-    background-color: green;
     color: white;
     border-style: ridge;
-    border-color: gray;
+    border-color: black;
 }
 
-.listas {
-    background-color: black;
+.listas, .nonumeradas {
+    margin: 4rem;   
     color: white;
 }
 
@@ -123,6 +138,7 @@ h2 {
     display: grid;
     grid-template-columns: 23rem 23rem;
     grid-template-rows: 5rem 5rem 25rem 15rem;
+    justify-content: center;
 }
 
 .campo:nth-child(5),
@@ -141,8 +157,6 @@ h2 {
 fieldset{
     margin-bottom: 2rem;
 }
-
-/* Taller de formularios */
 
 
 /* Flexbox */
@@ -173,4 +187,15 @@ fieldset{
     display: flex;
     width: 100%;
     height: 100%;
+}
+
+.text {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+
+footer{
+    margin-left: 3rem;
 }

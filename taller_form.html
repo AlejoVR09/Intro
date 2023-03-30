@@ -28,6 +28,8 @@
         /* Navegacion */
 
         .nav_container {
+            position: fixed;
+            top: 0;
             background-color: black;
             width: 100%;
             margin-bottom: 1.5rem;
@@ -49,20 +51,27 @@
             color: red;
         }
 
-        
         .checkbox {
-            padding-left: 100px;
+            padding-left: 5rem;
         }
         
         .space {
             margin-top: 1rem;
-            width: 380px;
+            width: 38rem;
+        }
+
+        .mainSpace{
+            margin-top: 4rem;
         }
 
         .mainSpace th {
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 5rem;
+            padding-right: 5rem;
             text-align: start;
+        }
+
+        footer {
+            margin-left: 1rem;
         }
     </style>
 </head>
@@ -121,7 +130,7 @@
                 <th>Correo</th>
                 <td><input type="email" placeholder="Tu email"></td>
                 <th>Genero</th>
-                <td><input type="radio"> Masculino <input type="radio"> Femenino</td>
+                <td class="genre"><input type="radio" name="sex"> Masculino <input type="radio" name="sex"> Femenino</td>
             </tr>
 
             <tr>
