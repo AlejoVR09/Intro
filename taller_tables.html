@@ -11,10 +11,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
+        body{
+            margin: 0;
+            color: black;
+        }
+        /* Navegacion */
+
+        .nav_container {
+            background-color: green;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border: 1px solid;
+        }
+
+        .mainNav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mainNav a {
+            color: black;   
+            padding: .5rem;
+            text-decoration: none;
+        }
+
+        .mainNav a:hover {
+            background-color: black;
+            color: white;
+        }
+
         h1 {
            text-align: center; 
            background-color: green;
-           border: 2px solid;
+           border: 1px solid;
         }
         .factura td,
         .factura th {
@@ -24,12 +53,12 @@
 
         table,th,td{
             border: 1px solid;
+            border-collapse: collapse;
         }
 
         th,
         td {
             text-align: center;
-            color: black;
         }
 
         td {
@@ -58,6 +87,21 @@
     <nav></nav>
     <main>
         <section>
+            <header>
+                <div class="nav_container">
+                    <nav class="mainNav container">
+                        <a href="index.html">Inicio</a>
+                        <a href="list.html">Lists</a>
+                        <a href="table.html">Tables</a>
+                        <a href="taller_tables.html">Table activity</a>
+                        <a href="form.html">Forms</a>
+                        <a href="taller_form.html">Forms activity</a>
+                        <a href="flexbox.html">Flexbox</a>
+                        <a href="grid.html">Grid</a>
+                        <a href="Proyecto_grid.html">Proyecto grid</a>
+                    </nav>
+                </div>
+            </header>
             <h1>Factura de venta</h2>
             <section class="factura">
                 <section class="features_container">
